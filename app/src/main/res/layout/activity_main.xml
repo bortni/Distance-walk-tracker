@@ -19,6 +19,36 @@
         android:id="@+id/start_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="start"
-        android:layout_below="@+id/input_text" />
+        android:layout_below="@+id/input_text"
+        android:text="start" />
+
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_text"
+        android:layout_toRightOf="@+id/start_button"
+        android:text="continue" />
+
+    <Button
+        android:id="@+id/pause_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start_button"
+        android:text="pause" />
+
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start_button"
+        android:layout_toRightOf="@+id/pause_button"
+        android:text="stop" />
+
+    <TextView
+        android:id="@+id/data_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="1.35 m" />
 </RelativeLayout>
