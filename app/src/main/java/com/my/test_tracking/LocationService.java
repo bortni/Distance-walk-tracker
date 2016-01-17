@@ -1,7 +1,6 @@
 package com.my.test_tracking;
 
 import android.Manifest;
-import android.app.Activity;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
