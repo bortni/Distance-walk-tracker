@@ -1,4 +1,4 @@
-package com.my.test_tracking;
+package com.my.test_tracking.db;
 
 import com.activeandroid.Model;
 import com.activeandroid.annotation.Column;
@@ -16,8 +16,12 @@ public class Locations extends Model {
     @Column(name = "distance")
     Float distance;
 
-    public Locations(String title, Float distance) {
+    @Column(name = "state")
+    String state;
+
+    public Locations(String title, Float distance, String state) {
         this.title = title;
         this.distance = distance;
+        this.state = state;
     }
 }

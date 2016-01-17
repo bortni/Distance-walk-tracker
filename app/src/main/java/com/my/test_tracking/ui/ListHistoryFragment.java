@@ -1,4 +1,4 @@
-package com.my.test_tracking;
+package com.my.test_tracking.ui;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

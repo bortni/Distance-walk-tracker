@@ -1,4 +1,4 @@
-package com.my.test_tracking;
+package com.my.test_tracking.ui.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

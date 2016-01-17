@@ -1,7 +1,6 @@
-package com.my.test_tracking;
+package com.my.test_tracking.ui;
 
 import android.Manifest;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.ActivityCompat;
@@ -9,9 +8,10 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.view.View;
 import android.widget.Button;
+
+import com.my.test_tracking.R;
+import com.my.test_tracking.ui.adapter.ViewPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
     Button startButton, pauseButton, stopButton, continueButton;

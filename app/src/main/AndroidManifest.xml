@@ -18,7 +18,7 @@
             android:name="AA_MODELS"
             android:value="com.my.test_tracking.Locations" />
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,13 +29,13 @@
         <service
             android:name=".LocationService"
             android:enabled="true" />
-        <receiver
-            android:name=".LocationReceiver"
-            android:enabled="true">
-            <intent-filter>
-                <action android:name="xxx.yyy.intent.action.LOCATION" />
-            </intent-filter>
-        </receiver>
+        <!--<receiver-->
+            <!--android:name=".LocationReceiver"-->
+            <!--android:enabled="true">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="intent.action.LOCATION" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
 
     </application>
 

@@ -18,7 +18,7 @@ import android.widget.Toast;
  * Created by Andrew on 17.01.2016.
  */
 public class LocationService extends Service {
-    public static final String BROADCAST_ACTION = "Location";
+    public static final String BROADCAST_ACTION = "intent.action.LOCATION";
     private static final int TWO_MINUTES = 1000 * 60 * 2;
     public LocationManager locationManager;
     public MyLocationListener listener;
@@ -34,7 +34,6 @@ public class LocationService extends Service {
                 try {
                     runnable.run();
                 } finally {
-
                 }
             }
         };
@@ -143,6 +142,7 @@ public class LocationService extends Service {
             // TODO: Consider calling
             return;
         }
+
         locationManager.removeUpdates(listener);
     }
 
@@ -153,7 +153,7 @@ public class LocationService extends Service {
             if (isBetterLocation(loc, previousBestLocation)) {
                 loc.getLatitude();
                 loc.getLongitude();
-                intent.setAction("xxx.yyy.intent.action.LOCATION");
+                intent.setAction(BROADCAST_ACTION);
                 intent.putExtra("latitude", loc.getLatitude());
                 intent.putExtra("longitude", loc.getLongitude());
                 intent.putExtra("provider", loc.getProvider());
@@ -175,6 +175,5 @@ public class LocationService extends Service {
         public void onStatusChanged(String provider, int status, Bundle extras) {
 
         }
-
     }
 }
