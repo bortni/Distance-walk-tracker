@@ -7,7 +7,7 @@ import com.my.test_tracking.ui.model.Coordinate;
 import java.util.List;
 
 /**
- * Created by bogatenkov on 18-Jan-16.
+ * Created by Andrew on 18-Jan-16.
  */
 public class DistanceCalculationCase {
 

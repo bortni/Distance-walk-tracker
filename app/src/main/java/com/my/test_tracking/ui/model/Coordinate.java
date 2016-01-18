@@ -1,7 +1,7 @@
 package com.my.test_tracking.ui.model;
 
 /**
- * Created by bogatenkov on 18-Jan-16.
+ * Created by Andrew on 18-Jan-16.
  */
 public class Coordinate {
 
