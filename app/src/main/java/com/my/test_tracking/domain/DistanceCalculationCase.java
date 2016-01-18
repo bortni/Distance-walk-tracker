@@ -11,7 +11,6 @@ import java.util.List;
  */
 public class DistanceCalculationCase {
 
-
     public static float calculateDistance(List<Coordinate> coordinates) {
 
         Location loc1 = new Location("A");
@@ -21,6 +20,7 @@ public class DistanceCalculationCase {
         Location loc2 = new Location("B");
         loc2.setLatitude(coordinates.get(coordinates.size() - 2).getLatitude());
         loc2.setLongitude(coordinates.get(coordinates.size() - 2).getLongitude());
+
 
         return loc2.distanceTo(loc1);
     }

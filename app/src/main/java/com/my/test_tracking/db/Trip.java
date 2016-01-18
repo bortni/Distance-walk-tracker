@@ -3,9 +3,6 @@ package com.my.test_tracking.db;
 import com.activeandroid.Model;
 import com.activeandroid.annotation.Column;
 import com.activeandroid.annotation.Table;
-import com.activeandroid.query.Select;
-
-import java.util.List;
 
 /**
  * Created by Andrew on 17.01.2016.
@@ -31,9 +28,5 @@ public class Trip extends Model {
         this.title = title;
         this.distance = distance;
         this.state = state;
-    }
-
-    public static List<Trip> selectAll() {
-        return new Select().from(Trip.class).orderBy("Id").execute();
     }
 }
