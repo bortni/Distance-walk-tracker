@@ -17,7 +17,7 @@ public class Trip extends Model {
     public String title;
 
     @Column(name = "distance")
-    public String distance;
+    public float distance;
 
     @Column(name = "state")
     public String state;
@@ -26,7 +26,7 @@ public class Trip extends Model {
         super();
     }
 
-    public Trip(String title, String distance, String state) {
+    public Trip(String title, float distance, String state) {
         super();
         this.title = title;
         this.distance = distance;

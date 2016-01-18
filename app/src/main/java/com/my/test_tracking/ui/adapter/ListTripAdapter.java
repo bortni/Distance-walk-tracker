@@ -40,7 +40,7 @@ public class ListTripAdapter extends ArrayAdapter<Trip> {
         TextView distance = (TextView) convertView.findViewById(R.id.distance_trip);
 
         title.setText(trip.title);
-        distance.setText(trip.distance);
+        distance.setText(String.valueOf(trip.distance));
         return convertView;
     }
 }
