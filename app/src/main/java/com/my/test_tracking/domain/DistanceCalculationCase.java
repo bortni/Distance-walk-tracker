@@ -1,13 +1,15 @@
-package com.my.test_tracking;
+package com.my.test_tracking.domain;
 
 import android.location.Location;
+
+import com.my.test_tracking.ui.model.Coordinate;
 
 import java.util.List;
 
 /**
  * Created by bogatenkov on 18-Jan-16.
  */
-public class Helper {
+public class DistanceCalculationCase {
 
 
     public static float calculateDistance(List<Coordinate> coordinates) {

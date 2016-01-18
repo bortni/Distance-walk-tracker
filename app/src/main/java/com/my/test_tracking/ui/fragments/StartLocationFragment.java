@@ -1,4 +1,4 @@
-package com.my.test_tracking.ui;
+package com.my.test_tracking.ui.fragments;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -17,11 +17,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.my.test_tracking.Coordinate;
-import com.my.test_tracking.Helper;
-import com.my.test_tracking.LocationService;
+import com.my.test_tracking.domain.DistanceCalculationCase;
+import com.my.test_tracking.service.LocationService;
 import com.my.test_tracking.R;
 import com.my.test_tracking.db.Trip;
+import com.my.test_tracking.ui.model.Coordinate;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -122,7 +122,7 @@ public class StartLocationFragment extends Fragment {
 
         if (count == 2) {
             count = 0;
-            updateDistance(Helper.calculateDistance(coordinates));
+            updateDistance(DistanceCalculationCase.calculateDistance(coordinates));
         }
     }
 

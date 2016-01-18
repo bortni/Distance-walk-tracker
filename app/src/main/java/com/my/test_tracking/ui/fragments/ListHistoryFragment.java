@@ -1,4 +1,4 @@
-package com.my.test_tracking.ui;
+package com.my.test_tracking.ui.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,6 +8,7 @@ import android.support.v4.content.Loader;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ListView;
 
 import com.activeandroid.query.Select;
@@ -28,6 +29,15 @@ public class ListHistoryFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mainView = inflater.inflate(R.layout.fragment_history, container, false);
         listView = (ListView) mainView.findViewById(R.id.list_trip);
+        Button button = (Button) mainView.findViewById(R.id.refresh);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadData();
+            }
+        });
+
         return mainView;
     }
 

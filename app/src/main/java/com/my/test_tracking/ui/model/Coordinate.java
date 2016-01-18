@@ -1,4 +1,4 @@
-package com.my.test_tracking;
+package com.my.test_tracking.ui.model;
 
 /**
  * Created by bogatenkov on 18-Jan-16.

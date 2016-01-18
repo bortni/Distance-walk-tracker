@@ -1,4 +1,4 @@
-package com.my.test_tracking;
+package com.my.test_tracking.service;
 
 import android.Manifest;
 import android.app.Service;

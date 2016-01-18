@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">test_tracking</string>
+    <string name="get_latest_trip">Get latest trip</string>
 </resources>

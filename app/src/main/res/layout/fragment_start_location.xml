@@ -28,14 +28,15 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/trip_name"
         android:layout_toRightOf="@+id/start_button"
-        android:text="continue" />
+        android:text="continue"
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/pause_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/start_button"
-        android:text="pause" />
+        android:text="Stop" />
 
     <Button
         android:id="@+id/stop_button"
@@ -43,7 +44,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/start_button"
         android:layout_toRightOf="@+id/pause_button"
-        android:text="stop" />
+        android:text="stop"
+        android:visibility="gone" />
 
     <TextView
         android:id="@+id/data_text"

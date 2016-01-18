@@ -12,6 +12,8 @@ import android.widget.Button;
 
 import com.my.test_tracking.R;
 import com.my.test_tracking.ui.adapter.ViewPagerAdapter;
+import com.my.test_tracking.ui.fragments.ListHistoryFragment;
+import com.my.test_tracking.ui.fragments.StartLocationFragment;
 
 public class MainActivity extends AppCompatActivity {
     Button startButton, pauseButton, stopButton, continueButton;
