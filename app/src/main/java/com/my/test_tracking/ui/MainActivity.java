@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
             final String[] permissions = new String[]{Manifest.permission.ACCESS_FINE_LOCATION};
             ActivityCompat.requestPermissions(this, permissions, 0);
         }
@@ -48,41 +47,4 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(new ListHistoryFragment(), "Show History");
         viewPager.setAdapter(adapter);
     }
-//        startButton = (Button) findViewById(R.id.start_button);
-//        pauseButton = (Button) findViewById(R.id.pause_button);
-//        stopButton = (Button) findViewById(R.id.stop_button);
-//        continueButton = (Button) findViewById(R.id.continue_button);
-//    }
-//
-//    @Override
-//    protected void onResume() {
-//        super.onResume();
-//        startButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                locationService(true);
-//            }
-//        });
-//
-//        pauseButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                locationService(false);
-//            }
-//        });
-//
-//    }
-//
-//    /**
-//     * Check location service.
-//     * true - start.
-//     * false - stop
-//     */
-//    private void locationService(boolean serviceAction) {
-//        Intent mServiceIntent = new Intent(this, LocationService.class);
-//        if (serviceAction)
-//            startService(mServiceIntent);
-//        else
-//            stopService(mServiceIntent);
-//    }
 }

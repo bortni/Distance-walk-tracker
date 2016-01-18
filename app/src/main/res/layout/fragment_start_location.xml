@@ -10,7 +10,7 @@
     tools:context=".ui.MainActivity">
 
     <EditText
-        android:id="@+id/input_text"
+        android:id="@+id/trip_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="enter name" />
@@ -19,14 +19,14 @@
         android:id="@+id/start_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/input_text"
+        android:layout_below="@+id/trip_name"
         android:text="start" />
 
     <Button
         android:id="@+id/continue_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/input_text"
+        android:layout_below="@+id/trip_name"
         android:layout_toRightOf="@+id/start_button"
         android:text="continue" />
 
